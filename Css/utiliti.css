@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+#details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+#details p {
+    color: #ffbd07;
+    transition: all 0.6s ease;
+}
+
+#details .color-change{
+    color: #e9e9e970;
+    margin: 10px 0;
+    width: 65%;
+}
+
+#details .wellc {
+    width: 50rem;
+    margin: 0 20px;
+}
+
+.home-pic img {
+    width: 35rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px -5px #03B367;
+}
+
+#details .wellc h1 {
+    color: #01be7a;
+    font-size: 50px;
+}
+#details button{
+    background-color: rgb(1 190 122);
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+#details button:hover {
+    scale: 1.2;
+}
+
+#types{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.type-border{
+    margin: 0 40px;
+}
+
+.type-border .type-svg img{
+    border-radius: 20px;
+    box-shadow: 0px 0px 14px -2px #01be7a;
+    transition: all 0.5s ease;
+}
+
+.type-border .type-svg img:hover{
+    scale: 1.5;
+}
+
+.jj{
+    scale: 1.2;
+}
+
+#support{
+    border: 1px solid rgb(230, 230, 230);
+    margin: 10px 15px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sp-heading h1{
+    color: #01be7a;
+    font-size: 35px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.wrapper {
+    max-width: 1100px;
+    width: 92%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -15px;
+  }
+  .wrapper i:last-child{
+    right: -15px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+
+
+
+
+@media (max-width: 990px){
+    #details .wellc {
+        width: fit-content;
+    }
+    .home-pic img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #details {
+        flex-direction: column;
+    }
+
+    #details .wellc {
+        width: fit-content;
+        margin: 20px 0;
+    }
+    .home-pic img{
+        width: 100%;
+    }
+    #details .color-change{
+        width: 100%;
+    }
+    #types{
+        margin: 0;
+        flex-direction: column;
+    }
+    .type-border{
+        margin: 40px 0px;
+    }
+    .right{
+        display: none;
+    }
+    
+}
